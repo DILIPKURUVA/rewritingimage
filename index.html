@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <script src="main.js"></script>
+        <title>
+           Paint Application
+        </title>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    </head>
+    <body>
+        <div class="container">
+         <h2>rewriting  the image</h2> 
+         <div class="wrapper">
+        <div class="editor-panel">
+            <div class="filter">
+            <label class="title">Filters</label>
+            <div class="options">
+                <button class="active" id="brightness">Brightness</button>
+                <button id="saturation">Saturation</button>
+                <button id="inversion">Inversion</button>
+                <button id="grayscale">Grayscale</button>
+            </div>
+            <div class="slider">
+                <div class="filter-info">
+                    <p class="name">Brightness</p>
+                    <p class="value">100%</p>
+                </div>
+                <input type="range" value="100" min="0" max="200">
+            </div>
+            </div>
+            <div class="rotate">
+                <label class="title">Rotate & Flip</label>
+                <div class="options">
+                    <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                    <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                    <button id="vertical"><i class="bx bx-reflect-vertical"></i></button>
+                    <button id="horizontzl"><i class="bx bx-reflect-horizontal"></i></button>
+                </div>
+            </div> 
+        </div>
+        <div class="preview-img">
+            <img src="image-placeholder.svg" alt="preview-img">
+        </div>
+         </div>  
+         <div class="controls">
+            <button class="reset-filter">Reset Filters</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*">
+                <button class="choose-img">Choose Image</button>
+                <button class="save-img">Save Image</button>
+            </div>
+         </div>
+        </div>
+       
+
+    </body>
+    </html>
